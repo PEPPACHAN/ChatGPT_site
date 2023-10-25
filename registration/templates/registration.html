@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+  <link rel="stylesheet" href="{% static 'registration/css/registration.css' %}">
+</head>
+<body>
+<form action="check/" class="registration" method="post">
+    {% csrf_token %}
+    Registration<br>
+    <input type="text" placeholder="Username" class="data" name="username"><br>
+    <input type="password" placeholder="Password" class="data" name="password"><br>
+    <input type="submit" value="Registration" class="data2"><br>
+    <a href="{% url 'reg' %}">Already have account?</a>
+</form>
+</body>
+</html>

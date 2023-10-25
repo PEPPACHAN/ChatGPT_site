@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 3fr 2fr 3fr;
+}
+
+.registration{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 10px;
+}
+
+.data{
+    outline: 0;
+    border-radius: 5px;
+    border-width: 0 0 2px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.data2{
+    outline: 0;
+    border-radius: 5px;
+    border-width: 0 0 0;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.data:focus{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
